@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List</title>
+    </head>
+    <body>
+        <h1>Quadros</h1>
+        {%for quadro in quadros %}
+            <h2>{{quadro.titulo}}</h2>
+            <p>{{ quadro.descricao }}</p>
+            <p>{{ quadro.publicacao}}</p>
+            <p>{{quadro.pintor.nome}}</p>
+        {% endfor %}
+
+        <a href="{% url 'add_quadro' %}">Adicionar um quadro</a>
+    </form>
+    </body>
+</html>

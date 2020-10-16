@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comida</title>
+    </head>
+    <body>
+        <h1>Comidas</h1>
+        <ol>
+            {%for comida in comidas %}
+                <li>{{comida.nome}}</li>
+            {% endfor %}
+        </ol>
+        <a href="{% url 'add_comida' %}">Adicionar comida</a>
+    </form>
+    </body>
+</html>

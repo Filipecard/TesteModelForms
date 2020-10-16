@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List</title>
+    </head>
+    <body>
+        <h1>Pintores</h1>
+        {%for pintor in pintores %}
+            <h2>{{pintor.nome}}</h2>
+            <p>{{pintor.nascimento}}</p>
+        {% endfor %}
+
+        <a href="{% url 'add_pintor' %}">Adicionar um pintor</a>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List</title>
+    </head>
+    <body>
+        <h1>Pessoas</h1>
+        {%for pessoa in pessoas %}
+            <h2>{{pessoa.nome}}</h2>
+
+            {% for comida in pessoa.comida.all %}
+                <p>{{comida.nome}}</p>
+            {% endfor %}
+        {% endfor %}
+
+        <a href="{% url 'add_pessoa' %}">Adicionar pessoa</a>
+    </form>
+    </body>
+</html>
